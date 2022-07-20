@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>B-Commerce</title>
+	<link rel="icon" href="./assets/img/logo/LogoB.png" type="image/gif">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subnet=vietnamese"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/normalize.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+	<div class="app">
+		<header class="app_header">
+			<nav class="header__navbar grid">
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separate">Vào cửa
+						hàng trên ứng dụng B-Ecommerce
+						<!-- Header QR Code -->
+						<div class="header__qr">
+							<img src="./assets/img/app/qrcode.png" alt="QR Code" class="header__qr-img">
+							<div class="header__qr-apps">
+								<a href="#" class="header__qr-link">
+									<img src="./assets/img/app/ch_play.png" alt="" class="header__qr-dowload-img">
+								</a>
+								<a href="#" class="header__qr-link">
+									<img src="./assets/img/app/app_store.png" alt="" class="header__qr-dowload-img">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="header__navbar-item">
+						<span class="header__navbar-title--no-pointer">Kết nối</span>
+						<a href="#" class="header__navbar-icon-link">
+							<i class="header__navbar-icon  fa-brands fa-facebook"></i>
+						</a>
+						<a href="#" class="header__navbar-icon-link">
+							<i class="header__navbar-icon fa-brands fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item header__navbar-item--has-notify">
+						<a href="#" class="header__navbar-item-link">
+							<i class="header__navbar-icon fa-regular fa-bell"></i>
+							Thông báo
+						</a>
+						<div class="header__notify">
+							<header class="header__notify-header">
+								<h3>Thông báo mới nhận</h3>
+							</header>
+							<ul class="header__notify-list">
+								<li class="header__notify-item header__notify-item--viewed">
+									<a href="#" class="header__notify-link">
+										<img src="https://cf.shopee.vn/file/91281db375e745d2e0301b21cc92d7da" alt=""
+											class="header__notify-img">
+										<div class="header__notify-info">
+											<span class="header__notify-name">
+												Xác thực chính hãng nguồn gốc các sản phẩm Ohui
+											</span>
+											<span class="header__notify-description">
+												HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến
+												nhất hiện nay.
+											</span>
+										</div>
+									</a>
+								</li>
+								<li class="header__notify-item header__notify-item--viewed ">
+									<a href="#" class="header__notify-link">
+										<img src="https://cf.shopee.vn/file/6258a027f02126c068460b5438184b2c" alt=""
+											class="header__notify-img">
+										<div class="header__notify-info">
+											<span class="header__notify-name">
+												Ohui chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK
+											</span>
+											<span class="header__notify-description">
+												Một làn môi căng mềm, quyến rũ với sắc màu nổi bật luôn là điều mà các
+												quý cô ao ước.
+											</span>
+										</div>
+									</a>
+								</li>
+								<li class="header__notify-item">
+									<a href="#" class="header__notify-link">
+										<img src="https://cf.shopee.vn/file/2a51dddd940524025596230ff85b6547" alt=""
+											class="header__notify-img">
+										<div class="header__notify-info">
+											<span class="header__notify-name">
+												Sale Sốc bộ dưỡng Ohui The First Tái tạo trẻ hóa da SALE OFF 70%
+											</span>
+											<span class="header__notify-description">
+												Giá chỉ còn 375.000 (giá gốc: 1.250.000 vnd).
+											</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<footer class="header__notify-footer">
+								<a href="#" class="header__notify-footer-btn">Xem tất cả</a>
+							</footer>
+						</div>
+					</li>
+					<li class="header__navbar-item">
+						<a href="#" class="header__navbar-item-link">
+							<i class="header__navbar-icon fa-regular fa-circle-question"></i>
+							Trợ giúp
+						</a>
+					</li>
+
+					<!-- Login/Register -->
+					<!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+
+					<!-- User login -->
+					<li class="header__navbar-item header__navbar-user">
+						<img src="./assets/img/user/avatar_default.jpg" alt="Avatar Default"
+							class="header__navbar-user-img">
+						<span class="header__navbar-user-name">Thiên Bá</span>
+
+						<ul class="header__navbar-user-menu">
+							<li class="header__navbar-user-item">
+								<a href="#">Tài khoản của tôi</a>
+							</li>
+							<li class="header__navbar-user-item">
+								<a href="#">Địa chỉ của tôi</a>
+							</li>
+							<li class="header__navbar-user-item">
+								<a href="#">Đơn mua</a>
+							</li>
+							<li class="header__navbar-user-item header__navbar-user-item--separate">
+								<a href="#">Đăng xuất</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Header with search -->
+			<div class="header-with-search grid">
+				<div class="header__logo-wrapper">
+					<a href="/" class="header__logo">
+						<img class="header__logo-img" src="./assets/img/logo/LogoB.png" alt="">
+						<span class="header__logo-name">Commerce</span>
+					</a>
+				</div>
+
+				<div class="header__search">
+					<div class="header__search-input-wrap">
+						<input type="text" placeholder="Tìm kiếm sản phẩm" class="header__search-input">
+
+						<!-- Search history -->
+						<div class="header__search-history">
+							<h3 class="header__search-history-heading">
+								Lịch sử tìm kiếm
+							</h3>
+							<ul class="header__search-history-list">
+								<li class="header__search-history-item">
+									<a href="#">Kem dưỡng da</a>
+								</li>
+								<li class="header__search-history-item">
+									<a href="#">Chuột văn phòng</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__search-select">
+						<span class="header__search-select-label">Trong shop</span>
+						<i class="header__search-select-icon fas fa-angle-down"></i>
+
+						<ul class="header__search-option">
+							<li class="header__search-option-item header__search-option-item--active">
+								<span>Trong shop</span>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li class="header__search-option-item">
+								<span>Ngoài shop</span>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+						</ul>
+					</div>
+					<button class="header__search-btn">
+						<i class="header__search-btn-icon fa fa-search"></i>
+					</button>
+				</div>
+
+				<div class="header__cart">
+					<div class="header__cart-wrap">
+						<i class="header__cart-icon fas fa-shopping-cart"></i>
+						<span class="header__cart-notice">3</span>
+
+						<!-- No cart: header__cart-list-no-cart -->
+						<div class="header__cart-list">
+							<img src="./assets/img/cart/no_cart.png" alt="No cart" class="header__cart-no-cart-img">
+							<span class="header__cart-no-cart-message">
+								Chưa có sản phẩm
+							</span>
+
+							<h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+							<ul class="header__cart-list-item">
+								<!-- Cart item -->
+								<li class="header__cart-item">
+									<img src="https://cf.shopee.vn/file/4569b929bf4a3fbe2d238778caa6b081"
+										class="header__cart-img" alt="">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name">Áo Thun Nam Nữ Unisex</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">199.000đ</span>
+												<span class="header__cart-item-multiply">x</span>
+												<span class="header__cart-item-quantity">2</span>
+											</div>
+										</div>
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-description">Phân loại: Cotton</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="https://cf.shopee.vn/file/00737a8b1b15d0fc25bf878b3e336712"
+										class="header__cart-img" alt="">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name">
+												Cây lau nhà thông minh</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">99.000đ</span>
+												<span class="header__cart-item-multiply">x</span>
+												<span class="header__cart-item-quantity">1</span>
+											</div>
+										</div>
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-description">Phân loại: Nhựa</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="https://cf.shopee.vn/file/da404269671403a24163afaf06c09569"
+										class="header__cart-img" alt="">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name">Đầm chữ A cổ vuông ngắn tay hở</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">69.000đ</span>
+												<span class="header__cart-item-multiply">x</span>
+												<span class="header__cart-item-quantity">1</span>
+											</div>
+										</div>
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-description">Phân loại: Cotton</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="app__container">
+			<div class="grid">
+				<div class="grid__row app__content">
+					<div class="grid__column-2">
+						<nav class="category">
+							<h3 class="category__heading">
+								Danh mục
+							</h3>
+
+							<ul class="category__list">
+								<li class="category-item category-item--active">
+									<a href="#" class="category-item__link">Giày thể thao</a>
+								</li>
+								<li class="category-item">
+									<a href="#" class="category-item__link">Áo sơ mi</a>
+								</li>
+								<li class="category-item">
+									<a href="#" class="category-item__link">Trang sức</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="grid__column-10">
+						<div class="home-filter">
+							<span class="home-filter__label">Sắp xếp theo</span>
+							<button class="home-filter__btn btn">Phổ biến</button>
+							<button class="home-filter__btn btn btn--primary">Mới nhất</button>
+							<button class="home-filter__btn btn">Bán chạy</button>
+
+							<div class="select-input">
+								<span class="select-input__label">Giá</span>
+								<i class="select-input__icon fa fa-angle-down"></i>
+
+								<!-- List option -->
+								<ul class="select-input__list">
+									<li class="select-input__item">
+										<a href="#" class="select-input__link">Giá thấp đến cao</a>
+									</li>
+									<li class="select-input__item">
+										<a href="#" class="select-input__link">Giá cao đến thấp</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="home-filter__page">
+								<span class="home-filter__page-num">
+									<span class="home-filter__page-current">1</span>/14
+								</span>
+
+								<div class="home-filter__page-control">
+									<a href="#" class="home-filter__page-btn home-filter__page-btn--disable">
+										<i class="home-filter__page-icon fa fa-angle-left"></i>
+									</a>
+									<a href="#" class="home-filter__page-btn">
+										<i class="home-filter__page-icon fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="home-product">
+							<div class="grid__row">
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+								<div class="grid__column-2-4">
+									<!-- Product item -->
+									<a href="#" class="product-item">
+										<div class="product-item__img"
+											style="background-image: url('https://cf.shopee.vn/file/5b133d4bfaceb9345d23b91daacca8ba')">
+										</div>
+										<h4 class="product-item__name">Áo polo nam COOLMAX trơn basic chất liệu mềm mát,
+											thoáng khí, chuẩn form, thiết kế tinh tế, trẻ trung - FEAER</h4>
+
+										<div class="product-item__price">
+											<span class="product-item__price-old">1.200.000đ</span>
+											<span class="product-item__price-current">999.000đ</span>
+										</div>
+
+										<div class="product-item__action">
+											<span class="product-item__like product-item__like--liked">
+												<i class="product-item__like-icon-empty far fa-heart"></i>
+												<i class="product-item__like-icon-fill fas fa-heart"></i>
+											</span>
+											<div class="product-item__rating">
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="product-item__star--gold fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<span class="product-item__sold">88 Đã bán</span>
+										</div>
+
+										<div class="product-item__origin">
+											<span class="product-item__brand">Whoo</span>
+											<span class="product-item__origin-name">Nhật bản</span>
+										</div>
+
+										<div class="product-item__favourite">
+											<i class="fa fa-check"></i>
+											<span>Yêu thích</span>
+										</div>
+
+										<div class="product-item__save-off">
+											<span class="product-item__save-off-percent">43%</span>
+											<span class="product-item__save-off-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<ul class="home-pagination pagination">
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">
+									<i class="pagination-item__icon fas fa-angle-left"></i>
+								</a>
+							</li>
+							<li class="pagination-item pagination-item--active">
+								<a href="#" class="pagination-item__link">1</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">2</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">3</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">4</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">5</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">...</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">14</a>
+							</li>
+							<li class="pagination-item">
+								<a href="#" class="pagination-item__link">
+									<i class="pagination-item__icon fas fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="grid">
+				<div class="grid__row">
+					<div class="grid__column-2-4">
+						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Trung tâm trợ giúp</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">B-Commerce Mall</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Hướng dẫn mua hàng</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__column-2-4">
+						<h3 class="footer__heading">Giới thiệu</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Giới thiệu</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Tuyển dụng</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Điều khoản</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__column-2-4">
+						<h3 class="footer__heading">Danh mục</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Giày thể thao</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Áo sơ mi</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Trang sức</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__column-2-4">
+						<h3 class="footer__heading">Theo dõi</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">
+									<i class="footer__item-icon fa-brands fa-facebook"></i>
+									Facebook
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">
+									<i class="footer__item-icon fa-brands fa-instagram"></i>
+									Instagram
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">
+									<i class="footer__item-icon fa-brands fa-linkedin"></i>
+									Linkedin
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__column-2-4">
+						<h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+						<div class="footer__download">
+							<img src="./assets/img/app/qrcode.png" alt="QR Code" class="footer__download-qr">
+							<div class="footer__download-apps">
+								<a href="#" class="footer__download-app-link">
+									<img src="./assets/img/app/ch_play.png" alt="CH Play"
+										class="footer__download-app-img">
+								</a>
+								<a href="#" class="footer__download-app-link">
+									<img src="./assets/img/app/app_store.png" alt="App store"
+										class="footer__download-app-img">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<div class="grid">
+					<p class="footer__text">© 2022 - Bản quyền thuộc về Công ty TNHH B-Commerce</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal layout -->
+	<!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+	<!-- Register form -->
+	<!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng kí, bạn đã đồng ý với B-Commerce về <a
+                                href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> & <a href="#" class="auth-form__text-link">Chính sách bảo mật</a> </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                          <img src="./assets/img/logo/logo_google.png" alt="Google logo" class="auth-form__socials-google">
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+
+	<!-- Login form -->
+	<!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="#" class="auth-form__help-link  auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                        <img src="./assets/img/logo/logo_google.png" alt="Google logo" class="auth-form__socials-google">
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+	<!-- </div>
+    </div> -->
+</body>
+
+</html>
